@@ -9,6 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #020024, #790973, #005bff);
+    
 }
 
 /* Navbar styling */
@@ -79,4 +80,17 @@ body {
     .navbar.active .navbar-menu {
         display: flex;
     }
+}
+
+main {
+    height: 100vh; /* Memastikan body penuh untuk mendukung vertikal centering */
+    display: flex; /* Menggunakan flexbox untuk vertikal centering */
+    justify-content: center; /* Tengah secara horizontal */
+    align-items: center; /* Tengah secara vertikal */
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    margin: 5px;
 }
