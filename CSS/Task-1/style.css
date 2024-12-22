@@ -8,7 +8,7 @@
 /* Body and background */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #020024, #790973, #005bff);
+    background: linear-gradient(100deg, #020024, #790973, #005bff);
     
 }
 
@@ -45,6 +45,7 @@ body {
     margin-left: 20px;
 }
 
+
 .navbar-menu li a {
     text-decoration: none;
     color: white;
@@ -57,6 +58,11 @@ body {
 .navbar-menu li a:hover {
     color: #74ebd5; /* Warna biru cerah saat hover */
     transform: translateY(-5px); /* Efek sedikit terangkat saat hover */
+}
+
+.navbar-menu li a.active {
+    color: #74ebd5;
+    font-weight: bold;
 }
 
 /* Responsive navbar */
