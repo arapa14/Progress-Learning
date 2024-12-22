@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties and Concepts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors, Properties, and Concepts</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Concept/Property</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Selectors -->
+            <tr>
+                <td>Element Selector</td>
+                <td>Targets HTML elements by their tag name (e.g., <code>p</code>, <code>h1</code>).</td>
+            </tr>
+            <tr>
+                <td>Class Selector</td>
+                <td>Targets elements with a specific class, prefixed with a dot (e.g., <code>.example</code>).</td>
+            </tr>
+            <tr>
+                <td>ID Selector</td>
+                <td>Targets an element with a specific ID, prefixed with a hash (#).</td>
+            </tr>
+            <tr>
+                <td>Attribute Selector</td>
+                <td>Targets elements with a specific attribute or value (e.g., <code>[type="text"]</code>).</td>
+            </tr>
+            <tr>
+                <td>Pseudo-class</td>
+                <td>Applies styles based on the state of an element (e.g., <code>:hover</code>).</td>
+            </tr>
+            <tr>
+                <td>Pseudo-element</td>
+                <td>Applies styles to specific parts of an element (e.g., <code>::before</code>, <code>::after</code>).</td>
+            </tr>
+            <!-- Box Model -->
+            <tr>
+                <td>Margin</td>
+                <td>Defines the space outside an element's border.</td>
+            </tr>
+            <tr>
+                <td>Border</td>
+                <td>Defines the edge of an element.</td>
+            </tr>
+            <tr>
+                <td>Padding</td>
+                <td>Defines the space between the content and the border.</td>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td>The actual content inside the padding.</td>
+            </tr>
+            <!-- Positioning -->
+            <tr>
+                <td>Static</td>
+                <td>The default positioning of elements, not affected by <code>top</code>, <code>left</code>, etc.</td>
+            </tr>
+            <tr>
+                <td>Relative</td>
+                <td>Positions an element relative to its normal position.</td>
+            </tr>
+            <tr>
+                <td>Absolute</td>
+                <td>Positions an element relative to the nearest positioned ancestor.</td>
+            </tr>
+            <tr>
+                <td>Fixed</td>
+                <td>Positions an element relative to the viewport, remaining in place during scrolling.</td>
+            </tr>
+            <tr>
+                <td>Sticky</td>
+                <td>Switches between relative and fixed positioning based on the scroll position.</td>
+            </tr>
+            <!-- Display -->
+            <tr>
+                <td>Block</td>
+                <td>Renders elements as a block (full-width) element.</td>
+            </tr>
+            <tr>
+                <td>Inline</td>
+                <td>Renders elements inline with no line breaks.</td>
+            </tr>
+            <tr>
+                <td>Inline-block</td>
+                <td>Combines inline and block behavior.</td>
+            </tr>
+            <tr>
+                <td>None</td>
+                <td>Hides an element from the layout.</td>
+            </tr>
+            <tr>
+                <td>Flex</td>
+                <td>Defines a flexible container for layout using flexbox.</td>
+            </tr>
+            <tr>
+                <td>Grid</td>
+                <td>Defines a grid container for layout using the CSS grid model.</td>
+            </tr>
+            <!-- Flexbox -->
+            <tr>
+                <td>Justify-content</td>
+                <td>Aligns flex items along the main axis.</td>
+            </tr>
+            <tr>
+                <td>Align-items</td>
+                <td>Aligns flex items along the cross axis.</td>
+            </tr>
+            <tr>
+                <td>Flex-direction</td>
+                <td>Defines the direction of the flex container's main axis.</td>
+            </tr>
+            <tr>
+                <td>Flex-wrap</td>
+                <td>Specifies whether flex items should wrap onto multiple lines.</td>
+            </tr>
+            <!-- Grid -->
+            <tr>
+                <td>Grid-template-columns</td>
+                <td>Defines column structure in a grid container.</td>
+            </tr>
+            <tr>
+                <td>Grid-template-rows</td>
+                <td>Defines row structure in a grid container.</td>
+            </tr>
+            <tr>
+                <td>Gap</td>
+                <td>Defines space between rows and columns in a grid or flex container.</td>
+            </tr>
+            <tr>
+                <td>Grid-area</td>
+                <td>Specifies grid items and their placement in the grid.</td>
+            </tr>
+            <!-- Typography -->
+            <tr>
+                <td>Font-family</td>
+                <td>Specifies the font of the text.</td>
+            </tr>
+            <tr>
+                <td>Font-size</td>
+                <td>Specifies the size of the font.</td>
+            </tr>
+            <tr>
+                <td>Font-weight</td>
+                <td>Specifies the thickness of the font (e.g., bold).</td>
+            </tr>
+            <tr>
+                <td>Line-height</td>
+                <td>Defines the height of a line of text.</td>
+            </tr>
+            <tr>
+                <td>Text-align</td>
+                <td>Defines the horizontal alignment of text.</td>
+            </tr>
+            <tr>
+                <td>Text-decoration</td>
+                <td>Applies decoration to text (e.g., underline).</td>
+            </tr>
+            <!-- Colors -->
+            <tr>
+                <td>Color</td>
+                <td>Sets the text color.</td>
+            </tr>
+            <tr>
+                <td>Background-color</td>
+                <td>Sets the background color of an element.</td>
+            </tr>
+            <tr>
+                <td>Opacity</td>
+                <td>Defines the transparency level of an element.</td>
+            </tr>
+            <tr>
+                <td>RGBA</td>
+                <td>Defines colors with red, green, blue, and alpha transparency values.</td>
+            </tr>
+            <tr>
+                <td>HEX</td>
+                <td>Defines colors using hexadecimal values.</td>
+            </tr>
+            <tr>
+                <td>HSL</td>
+                <td>Defines colors using hue, saturation, and lightness values.</td>
+            </tr>
+            <!-- Units -->
+            <tr>
+                <td>PX</td>
+                <td>Specifies absolute units in pixels.</td>
+            </tr>
+            <tr>
+                <td>EM</td>
+                <td>Specifies relative units based on the font size of the parent.</td>
+            </tr>
+            <tr>
+                <td>REM</td>
+                <td>Specifies relative units based on the root element's font size.</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Specifies values as a percentage of the parent element.</td>
+            </tr>
+            <tr>
+                <td>VH</td>
+                <td>Specifies relative units based on the viewport height.</td>
+            </tr>
+            <tr>
+                <td>VW</td>
+                <td>Specifies relative units based on the viewport width.</td>
+            </tr>
+            <!-- Transitions and Animations -->
+            <tr>
+                <td>Transition</td>
+                <td>Specifies the transition effect between states.</td>
+            </tr>
+            <tr>
+                <td>Transform</td>
+                <td>Applies 2D or 3D transformations to an element (e.g., rotate, scale).</td>
+            </tr>
+            <tr>
+                <td>Animation</td>
+                <td>Defines animation keyframes and behavior.</td>
+            </tr>
+            <!-- Responsive Design -->
+            <tr>
+                <td>Media Queries</td>
+                <td>Applies styles based on conditions like screen size or device type.</td>
+            </tr>
+            <tr>
+                <td>@media</td>
+                <td>Specifies the start of a media query block.</td>
+            </tr>
+            <tr>
+                <td>Max-width</td>
+                <td>Defines the maximum width for an element or media query.</td>
+            </tr>
+            <tr>
+                <td>Min-width</td>
+                <td>Defines the minimum width for an element or media query.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

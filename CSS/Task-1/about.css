@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    background: linear-gradient(135deg, #020024, #790973, #005bff);
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.pp {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.description {
+    color: gray;
+    margin-top: -15px;
+}
+

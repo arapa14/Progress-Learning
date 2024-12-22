@@ -1,0 +1,82 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #020024, #790973, #005bff);
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #4e4376, #2e3c6f); /* Gradasi navbar yang lebih cocok dengan background */
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lebih lembut untuk kesan modern */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styling */
+.navbar-logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Menu styling */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Hover effect */
+.navbar-menu li a:hover {
+    color: #74ebd5; /* Warna biru cerah saat hover */
+    transform: translateY(-5px); /* Efek sedikit terangkat saat hover */
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        flex-direction: column;
+    }
+
+    .navbar-menu li {
+        margin: 15px 0;
+    }
+
+    /* Show menu when navbar is active */
+    .navbar.active .navbar-menu {
+        display: flex;
+    }
+}

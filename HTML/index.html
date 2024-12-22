@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags and Attributes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Tags, Attributes, and Descriptions</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Basic Tags -->
+            <tr>
+                <td>&lt;html&gt;</td>
+                <td>The root element of an HTML document. It wraps all the content in the document.</td>
+            </tr>
+            <tr>
+                <td>&lt;head&gt;</td>
+                <td>Contains metadata, title, and links to stylesheets or scripts for the document.</td>
+            </tr>
+            <tr>
+                <td>&lt;body&gt;</td>
+                <td>Defines the main content of the HTML document visible to users.</td>
+            </tr>
+            <tr>
+                <td>&lt;title&gt;</td>
+                <td>Sets the title of the web page displayed on the browser tab.</td>
+            </tr>
+            <!-- Headings and Text -->
+            <tr>
+                <td>&lt;h1&gt; to &lt;h6&gt;</td>
+                <td>Defines headings, with &lt;h1&gt; being the largest and &lt;h6&gt; the smallest.</td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>Defines a paragraph in the document.</td>
+            </tr>
+            <tr>
+                <td>&lt;br&gt;</td>
+                <td>Inserts a line break within text.</td>
+            </tr>
+            <tr>
+                <td>&lt;hr&gt;</td>
+                <td>Creates a horizontal line to separate content.</td>
+            </tr>
+            <tr>
+                <td>&lt;strong&gt;</td>
+                <td>Defines strong, emphasized text with bold styling.</td>
+            </tr>
+            <tr>
+                <td>&lt;em&gt;</td>
+                <td>Defines text with emphasis, usually styled as italicized text.</td>
+            </tr>
+            <!-- Lists -->
+            <tr>
+                <td>&lt;ul&gt; and &lt;ol&gt;</td>
+                <td>&lt;ul&gt; creates an unordered list, and &lt;ol&gt; creates an ordered list.</td>
+            </tr>
+            <tr>
+                <td>&lt;li&gt;</td>
+                <td>Defines a list item within &lt;ul&gt; or &lt;ol&gt;.</td>
+            </tr>
+            <!-- Links and Images -->
+            <tr>
+                <td>&lt;a&gt;</td>
+                <td>Defines a hyperlink, using the <strong>href</strong> attribute to specify the target URL.</td>
+            </tr>
+            <tr>
+                <td>href (attribute)</td>
+                <td>Specifies the URL for a hyperlink.</td>
+            </tr>
+            <tr>
+                <td>target (attribute)</td>
+                <td>Specifies where to open the linked document (e.g., "_blank" opens it in a new tab).</td>
+            </tr>
+            <tr>
+                <td>&lt;img&gt;</td>
+                <td>Embeds an image using attributes like <strong>src</strong> (source) and <strong>alt</strong> (alternative text).</td>
+            </tr>
+            <tr>
+                <td>src (attribute)</td>
+                <td>Specifies the source of the image file.</td>
+            </tr>
+            <tr>
+                <td>alt (attribute)</td>
+                <td>Provides alternative text if the image cannot be displayed.</td>
+            </tr>
+            <tr>
+                <td>width (attribute)</td>
+                <td>Specifies the width of an image or element.</td>
+            </tr>
+            <tr>
+                <td>height (attribute)</td>
+                <td>Specifies the height of an image or element.</td>
+            </tr>
+            <!-- Tables -->
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td>Defines a table in an HTML document.</td>
+            </tr>
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>Defines a row in a table.</td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>Defines a cell in a table.</td>
+            </tr>
+            <tr>
+                <td>&lt;th&gt;</td>
+                <td>Defines a header cell in a table.</td>
+            </tr>
+            <tr>
+                <td>colspan (attribute)</td>
+                <td>Specifies the number of columns a cell should span.</td>
+            </tr>
+            <tr>
+                <td>rowspan (attribute)</td>
+                <td>Specifies the number of rows a cell should span.</td>
+            </tr>
+            <!-- Forms -->
+            <tr>
+                <td>&lt;form&gt;</td>
+                <td>Defines an HTML form for user input.</td>
+            </tr>
+            <tr>
+                <td>&lt;input&gt;</td>
+                <td>Defines an input field where users can enter data.</td>
+            </tr>
+            <tr>
+                <td>&lt;textarea&gt;</td>
+                <td>Defines a larger text input area for user input.</td>
+            </tr>
+            <tr>
+                <td>&lt;label&gt;</td>
+                <td>Defines a label for an input element.</td>
+            </tr>
+            <tr>
+                <td>&lt;button&gt;</td>
+                <td>Defines a clickable button.</td>
+            </tr>
+            <!-- Multimedia -->
+            <tr>
+                <td>&lt;audio&gt;</td>
+                <td>Embeds audio content in the document with playback controls.</td>
+            </tr>
+            <tr>
+                <td>control (attribute)</td>
+                <td>Specifies that audio or video controls (play, pause, volume) should be displayed.</td>
+            </tr>
+            <!-- Metadata -->
+            <tr>
+                <td>&lt;meta&gt;</td>
+                <td>Provides metadata like character set and viewport settings.</td>
+            </tr>
+            <tr>
+                <td>charset (attribute)</td>
+                <td>Defines the character encoding (e.g., UTF-8).</td>
+            </tr>
+            <tr>
+                <td>name (attribute)</td>
+                <td>Specifies the name of a metadata property (e.g., "viewport").</td>
+            </tr>
+            <tr>
+                <td>content (attribute)</td>
+                <td>Specifies the value of the metadata property (e.g., "width=device-width").</td>
+            </tr>
+            <tr>
+                <td>viewport (attribute)</td>
+                <td>Optimizes the layout for different screen sizes and devices.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
