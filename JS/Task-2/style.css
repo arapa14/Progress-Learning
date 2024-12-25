@@ -1,0 +1,94 @@
+body {
+    background: linear-gradient(to bottom, #8c52ff, #4a00e0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.3);
+    width: 90%;
+    max-width: 400px;
+    padding: 15px; /* Kurangi padding untuk menghemat ruang */
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+h2, h3, label, p {
+    color: #fff;
+    margin: 5px 0; /* Kurangi margin untuk mengurangi jarak antar elemen */
+}
+
+input {
+    width: calc(100% - 16px); /* Kurangi padding di sekitar input */
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin-top: 10px; /* Kurangi jarak ke elemen atas */
+}
+
+button {
+    background: #6f42c1;
+    color: white;
+    padding: 8px; /* Kurangi padding untuk membuat tombol lebih kecil */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px; /* Kurangi jarak antar elemen */
+    width: 100%;
+    font-size: 14px; /* Perkecil ukuran font */
+}
+
+button:hover {
+    background: #4a00e0;
+}
+
+#error-message {
+    color: #f00;
+    margin-top: 5px; /* Kurangi jarak untuk menyesuaikan ruang */
+}
+
+#temp-div p {
+    font-size: 40px; /* Perkecil ukuran font untuk menghemat ruang */
+    margin: 10px 0; /* Kurangi jarak antar elemen */
+}
+
+#weather-info {
+    font-size: 16px; /* Perkecil font untuk tampilan lebih kompak */
+    margin: 5px 0;
+}
+
+#weather-icon {
+    width: 150px; /* Perkecil ukuran gambar */
+    height: 150px;
+    margin: 10px auto; /* Kurangi margin */
+    display: block;
+    object-fit: contain;
+}
+
+#hourly-forecast {
+    display: flex;
+    justify-content: space-around; /* Atur distribusi elemen */
+    flex-wrap: wrap;
+    margin-top: 10px; /* Kurangi jarak antar elemen */
+}
+
+.hourly-item {
+    text-align: center;
+    margin: 5px;
+    color: white;
+}
+
+.hourly-item img {
+    width: 30px; /* Perkecil ukuran ikon */
+    height: 30px;
+}
+
+#weather-icon {
+    display: none; /* Sembunyikan gambar secara default */
+}
