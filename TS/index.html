@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typescript Fundamental</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Typescript Fundamental</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Section</td>
+                <td>Task</td>
+                <td>Description</td>
+            </tr>
+            <tr>
+                <td rowspan="12">Basic Types</td>
+                <td>String</td>
+                <td>data type with string value (""")</td>
+            </tr>
+            <tr>
+                <td>Number</td>
+                <td>data type with number value (123)</td>
+            </tr>
+            <tr>
+                <td>Boolean</td>
+                <td>logixcl value (true or false)</td>
+            </tr>
+            <tr>
+                <td>Array</td>
+                <td>data type with array value ([]), the array value must be same type</td>
+            </tr>
+            <tr>
+                <td>Tuple</td>
+                <td>data type with array value ([]), the array value can be different type</td>
+            </tr>
+            <tr>
+                <td>Enum</td>
+                <td>data type with enum value (enum) with constant value</td>
+            </tr>
+            <tr>
+                <td>Any</td>
+                <td>data type with any value (any), for we dont know the type</td>
+            </tr>
+            <tr>
+                <td>Void</td>
+                <td>data type with void value (void), for function without return value</td>
+            </tr>
+            <tr>
+                <td>Null</td>
+                <td>data type with null value (nothing)</td>
+            </tr>
+            <tr>
+                <td>Undefined</td>
+                <td>data type that has not been assigned a value, commonly in variable</td>
+            </tr>
+            <tr>
+                <td>Never</td>
+                <td>data type with never value (never), for error</td>
+            </tr>
+            <tr>
+                <td>Unknown</td>
+                <td>like any, but more safety</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Type Assertion</td>
+                <td>as keyword</td>
+                <td>Used to explicitly set the type of a value or variable</td>
+            </tr>
+            <tr>
+                <td> <> syntax</td>
+                <td>Another way to perform a type assertion.</td>
+            </tr>
+            <tr>
+                <td rowspan="5">Interfaces</td>
+                <td>defining</td>
+                <td>an interface specifies the shape of an object, including the properties and their types</td>
+            </tr>
+            <tr>
+                <td>Extending</td>
+                <td>interfaces can inherit properties from other interfaces using the extends keyword. its like combine an interfaces with another interfaces</td>
+            </tr>
+            <tr>
+                <td>optional properties</td>
+                <td>optional properties are denoted with a question mark (?) after the property name, meaning they may or may not be present</td>
+            </tr>
+            <tr>
+                <td>readonly properties</td>
+                <td>ensures that a property cannot be moodified after it is set</td>
+            </tr>
+            <tr>
+                <td>Dynamic keys</td>
+                <td>allow you to define properties eith keys of certain type or pattern using index signatures</td>
+            </tr>
+            <tr>
+                <td rowspan="7">classes</td>
+                <td>properties</td>
+                <td>variable defined in class to hold data or state</td>
+            </tr>
+            <tr>
+                <td>methods</td>
+                <td>function defined within a class that perform operations</td>
+            </tr>
+            <tr>
+                <td>constructor</td>
+                <td>a special method called when a new instance of the class is created. It initializes properties.</td>
+            </tr>
+            <tr>
+                <td>Inheritance</td>
+                <td>inheritance allows a class to extend another class and inherit its properties and methods using the extend keyword</td>
+            </tr>
+            <tr>
+                <td>access modifier (public)</td>
+                <td>accessible everywhere (default if no modifier is specified).</td>
+            </tr>
+            <tr>
+                <td>access modifier (private)</td>
+                <td>accessible within the class only</td>
+            </tr>
+            <tr>
+                <td>access modifier (protected)</td>
+                <td>accessible within the class and its subclasses</td>
+            </tr>
+            <tr>
+                <td rowspan="4">function</td>
+                <td>type annotations</td>
+                <td>specify the types of parameter and the return value of function</td>
+            </tr>
+            <tr>
+                <td>optional parameters</td>
+                <td>optional paramters are denotade by a question mark (?). These parameters are not required when calling the function</td>
+            </tr>
+            <tr>
+                <td>default parameters</td>
+                <td>provide a default value if no value is passed during the function call</td>
+            </tr>
+            <tr>
+                <td>rest parameter</td>
+                <td>allow a function to accept an arbitrary number of arguments as an array</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Generic</td>
+                <td>generic function</td>
+                <td>A generic function is defined using a type parameter, usually denoted by <T> (or any identifier). This type parameter acts as a placeholder for the actual type provided when the function is invoked.</td>
+            </tr>
+            <tr>
+                <td>generic classes</td>
+                <td>Generic classes work similarly to generic functions. They allow a class to operate with a type parameter.</td>
+            </tr>
+            <tr>
+                <td rowspan="3">modules</td>
+                <td>import</td>
+                <td>to use exports from another module, you import</td>
+            </tr>
+            <tr>
+                <td>export</td>
+                <td>you can export variables, function, classes, or interfaces from a module so that other files can use them</td>
+            </tr>
+            <tr>
+                <td>namespace</td>
+                <td>Namespaces are an older way of organizing code in TypeScript. They group related functionality under a single name, helping avoid naming conflicts. Unlike modules, namespaces are primarily for internal organization and are not recommended for modern TypeScript projects.</td>
+            </tr>
+            <tr>
+                <td rowspan="13">utility types</td>
+                <td>partial</td>
+                <td>makes a property of a type optional</td>
+            </tr>
+            <tr>
+                <td>Pick</td>
+                <td>Selects specific properties from a type.</td>
+            </tr>
+            <tr>
+                <td>Omit</td>
+                <td>Excludes specific properties from a type.</td>
+            </tr>
+            <tr>
+                <td>Readonly</td>
+                <td>Makes all properties of a type read-only.</td>
+            </tr>
+            <tr>
+                <td>Record</td>
+                <td>Constructs a type with keys mapped to a specified type.</td>
+            </tr>
+            <tr>
+                <td>Exclude</td>
+                <td>Removes specific types from a union.</td>
+            </tr>
+            <tr>
+                <td>Extract</td>
+                <td>Selects specific types from a union.</td>
+            </tr>
+            <tr>
+                <td>NonNullable</td>
+                <td>Removes <code>null</code> and <code>undefined</code> from a type.</td>
+            </tr>
+            <tr>
+                <td>Parameters</td>
+                <td>Extracts the parameter types of a function as a tuple.</td>
+            </tr>
+            <tr>
+                <td>ReturnType</td>
+                <td>Extracts the return type of a function.</td>
+            </tr>
+            <tr>
+                <td>InstanceType</td>
+                <td>Extracts the type of an instance of a class.</td>
+            </tr>
+            <tr>
+                <td>Required</td>
+                <td>Makes all properties of a type required.</td>
+            </tr>
+            <tr>
+                <td>ThisType</td>
+                <td>Specifies the type for the <code>this</code> keyword in an object literal.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
